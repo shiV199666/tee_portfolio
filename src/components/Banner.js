@@ -1,6 +1,7 @@
 import React from 'react';
 // images
 import Image from '../assets/about.png';
+import Scroll from '../assets/scroll.png';
 // icons
 import { FaDribbble, FaTwitter  , FaInstagram , FaYoutube } from 'react-icons/fa';
 // type animation
@@ -24,6 +25,17 @@ var sliderVariants = {
   }
 }
 
+const textVariants = {
+  hidden: { opacity: 0, y: '-100%' },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  }
+};
 const Banner = () => {
   return (
     <section className='min-h-[85vh] lg:min-h-[]' id='home' >
@@ -44,7 +56,7 @@ const Banner = () => {
                   2000,
                   'Actor',
                   2000,
-                  'Writter',
+                  'Writer',
                   2000
               ]}
               speed={50}
@@ -54,7 +66,7 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p variants={fadeIn('up', 0.5)} initial="hidden"
-             whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>
+             whileInView={'show'} viewport={{once:false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:text-[25px] lg:mx-0'>
               I love frieeeeeessss
             </motion.p>
             <motion.div 
@@ -68,7 +80,7 @@ const Banner = () => {
             </motion.div>
             {/* Socials */}
             <motion.div variants={fadeIn('up', 0.7)} initial="hidden"
-            whileInView={'show'} viewport={{once:false, amount: 0.7}} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+            whileInView={'show'} viewport={{once:false, amount: 0.7}} className='flex mb-8 text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='#'>
                 <FaYoutube/>
               </a>
@@ -79,6 +91,17 @@ const Banner = () => {
                 <FaTwitter />
               </a>
             </motion.div>
+            <motion.div className='flex gap-x-6 max-w-max mx-auto lg:mx-0'
+            variants={fadeIn('up', 0.7)} initial="hidden"
+            whileInView={'show'} viewport={{once:false, amount: 0.7}}>
+              <motion.img 
+              variants={textVariants}
+              animate="scrollButton"
+              src={Scroll}
+              alt=""
+              />
+            </motion.div>
+            
           </div>
           {/* Image */}
           <motion.div variants={fadeIn('down', 0.5)} initial="hidden"

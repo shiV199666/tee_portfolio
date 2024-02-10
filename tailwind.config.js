@@ -2,8 +2,8 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
+      primary: 'Helvetica, Arial, sans-serif',
+      secondary: 'Helvetica, Arial, sans-serif',
       tertiary: 'Aldrich',
     },
     container: {

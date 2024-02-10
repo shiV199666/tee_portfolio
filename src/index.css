@@ -3,8 +3,131 @@
 @tailwind utilities;
 
 .btn {
-  background: #F0F0F0;
-  box-shadow: 0px 4.42184px 40.23px #F0F0F0;
+  background: #E7473C;
+  /* box-shadow: 0px 4.42184px 40.23px #F0F0F0; */
+}
+
+.formContainer {
+  /* flex: 1; */
+  position: relative;
+
+  .phoneSvg {
+    stroke: #E7473C;
+    position: fixed;
+    margin: auto;
+  }
+}
+
+section {
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.worksection {
+  scroll-snap-align: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.portfolio {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 36px;
+
+    .progressBar {
+      height: 10px;
+      background-color: #E7473C;
+    }
+  }
+
+  .container {
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      @media (max-width: 738px) {
+        flex-direction: column;
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+
+        @media (max-width: 738px) {
+          width: 100%;
+          max-height: 300px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @media (max-width: 738px) {
+          object-fit: contain;
+        }
+      }
+
+      
+  
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (max-width: 738px) {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+        }
+
+        h2 {
+          @media (max-width: 738px) {
+            font-size: 36px;
+          }
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+
+          @media (max-width: 738px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .slidingTextContainer {
@@ -28,6 +151,207 @@
   border-radius: 100%;
 }
 
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div:hover {
+  background: #E7473C;
+  transform: translateY(-10px);
+}
+
+.formContainer {
+
+  .phoneSvg {
+    stroke: #E7473C;
+    position: absolute;
+    margin: auto;
+
+  }
+}
+
+.testi .thumbnail {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 0;
+
+}
+
+.testi .aside {
+  position: relative;
+  display: flex;
+  padding-top: 15px;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.testi .aside > p {
+  position: relative;
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(10%);
+  transition: transform 1s, opacity 1s;
+}
+
+.testi .swiper-slide-active .aside > p {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.testi .aside > p::before,
+.testi .aside > p::after {
+  font-family: serif;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1;
+  position: absolute;
+  color: var(--light-color);
+  height: 40px;
+  z-index: -1;
+}
+
+.testi .aside > p::before {
+  content: open-quote;
+  top: -40px;
+  left: 10px;
+  z-index: 1;
+}
+
+.testi .aside > p::after {
+  content: close-quote;
+  right: 0;
+  z-index: 1;
+}
+
+.testi .aside .name {
+  position: relative;
+  width: fit-content;
+  line-height: 1;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: transform 1s .2s, opacity 1s .3s;
+}
+
+.testi .aside .name h4 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary-color);
+  opacity: .8;
+}
+
+.testi .aside .name p {
+  font-size: 12px;
+  text-align: right;
+}
+
+.testi .thumbnail::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 30px);
+  height: calc(100% + 10px);
+  background-color: #E7473C;
+  z-index: -1;
+  box-shadow: var(--box-shadow);
+  transition: border-radius .5s .3s;
+}
+.testi .swiper-slide-active .thumbnail::before {
+  border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
+}
+
+.testi .thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(2);
+  transition: transform .5s;
+}
+
+.testi .swiper-slide-active .thumbnail img {
+  transform: scale(1);
+}
+
+.testi .swiper-slide-active .name {
+  transform: translateX(-50px);
+  opacity: 1;
+}
+
+.testi .head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testi .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .testi .wrapper {
+    flex-direction: row;
+    padding: 30px 100px;
+  }
+  .testi .thumbnail {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+ /* slider */
+ .testi :is(.swiper-button-next, .swiper-button-prev) {
+  background-color: var(--light-color);
+  top: 35%;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  transition: background-color .3s;
+  box-shadow: var(--box-shadow);
+ }
+
+ .testi :is(.swiper-button-next, .swiper-button-prev)::after {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white-color);
+ }
+
+ .testi .swiper-pagination {
+  position: relative;
+ }
+
+ .testi .swiper-pagination span {
+  background-color: var(--light-color);
+  transition: width .3s;
+  opacity: 1;
+ }
+
+ .testi .swiper-pagination .swiper-pagination-bullet-active {
+  width: 26px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+ }
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-[#F0F0F0];
@@ -39,7 +363,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-black font-medium;
+    @apply rounded-full font-primary text-[#F0F0F0] font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
