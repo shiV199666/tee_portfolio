@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tee_portfolio/static/css/main.4a1778ae.css",
-    "main.js": "/tee_portfolio/static/js/main.feae1b9e.js",
+    "main.css": "/tee_portfolio/static/css/main.8df00e6f.css",
+    "main.js": "/tee_portfolio/static/js/main.6ce07e24.js",
     "static/media/writer.jpg": "/tee_portfolio/static/media/writer.61454d9827971e4228ed.jpg",
     "static/media/piano.jpg": "/tee_portfolio/static/media/piano.c32259436bd8e4a9c5ea.jpg",
     "static/media/about.png": "/tee_portfolio/static/media/about.34da930ab4436bc41a33.png",
@@ -9,11 +9,11 @@
     "static/media/singer.jpg": "/tee_portfolio/static/media/singer.5ab393e663059e08ff52.jpg",
     "index.html": "/tee_portfolio/index.html",
     "static/media/logo.svg": "/tee_portfolio/static/media/logo.465e4646c2cd3162813054ca12e627a3.svg",
-    "main.4a1778ae.css.map": "/tee_portfolio/static/css/main.4a1778ae.css.map",
-    "main.feae1b9e.js.map": "/tee_portfolio/static/js/main.feae1b9e.js.map"
+    "main.8df00e6f.css.map": "/tee_portfolio/static/css/main.8df00e6f.css.map",
+    "main.6ce07e24.js.map": "/tee_portfolio/static/js/main.6ce07e24.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a1778ae.css",
-    "static/js/main.feae1b9e.js"
+    "static/css/main.8df00e6f.css",
+    "static/js/main.6ce07e24.js"
   ]
 }
