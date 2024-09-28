@@ -7,6 +7,106 @@
   src: url("../src/fonts/MADE_Bruno.otf");
 }
 
+.specialtext
+    {
+      -webkit-text-stroke: 2px black;
+    }
+
+:root {
+  --color-black: #000000;
+  --color-purple: #A290E6;
+  --color-green: #CEF26B;
+  --color-yellow: #FCDD57;
+  --color-beige: #F1ECE8;
+  --light-green: #b2e2bb;
+  
+  --border-width: 2px;
+  --border-radius: 5px;
+  --border-small: solid 0.65vmin #000;
+}
+
+.desc {
+  width: fit-content;
+  background: var(--light-green);
+  border-radius: 3vmin;
+  border: var(--border-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 6vmin;
+  font-size: 4vmin;
+  font-weight: 600;
+  right: 60vmin;
+  box-shadow: 0.6vmin 0.6vmin var(--color-purple), 1vmin 1vmin #000,
+    0.65vmin 1vmin #000, 1vmin 0.65vmin #000;
+}
+
+.desc2 {
+  width: fit-content;
+  background: var(--color-yellow);
+  border-radius: 3vmin;
+  border: var(--border-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 6vmin;
+  font-size: 4vmin;
+  font-weight: 600;
+  right: 30vmin;
+  box-shadow: 0.6vmin 0.6vmin var(--color-beige), 1vmin 1vmin #000,
+    0.65vmin 1vmin #000, 1vmin 0.65vmin #000;
+}
+
+.desc3 {
+  width: fit-content;
+  background: var(--color-beige);
+  border-radius: 3vmin;
+  border: var(--border-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 6vmin;
+  font-size: 4vmin;
+  font-weight: 600;
+  right: 60vmin;
+  box-shadow: 0.6vmin 0.6vmin var(--color-green), 1vmin 1vmin #000,
+    0.65vmin 1vmin #000, 1vmin 0.65vmin #000;
+}
+
+.neo-image-box {
+  color: var(--color-black);
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-black);
+  box-shadow: 4px 4px 0px 0px var(--color-black);
+}
+
+.neo-a-tag {
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-black);
+  box-shadow: 2px 2px 0px 0px var(--color-black);
+}
+
+.neo-a-tag-beige {
+  background-color: var(--color-beige)
+}
+
+.neo-a-tag-green {
+  background-color: var(--color-green)
+}
+
+.neo-a-tag-black {
+  background-color: var(--color-black)
+}
+
+.neo-a-tag-purple {
+  background-color: var(--color-purple)
+}
+
 .btn {
   background: #43c199;
   /* box-shadow: 0px 4.42184px 40.23px #F0F0F0; */
@@ -359,7 +459,7 @@ section {
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-[#F0F0F0] bg-[#EFEFEF];
+    @apply font-secondary text-lg leading-8 text-[#F0F0F0] bg-[#F1ECE8];
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -386,6 +486,6 @@ section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
   .sectionHome {
-    @apply py-8 lg:py-24 lg:h-screen flex;
+    @apply py-8 lg:py-24 lg:h-screen;
   }
 }

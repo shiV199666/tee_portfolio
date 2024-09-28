@@ -14,7 +14,7 @@ useEffect(() => {
     preloadedImage.current.src = Logo;
 }, []);
   return (
-  <header className={`${isHeaderChange ? "h-[100px]" : "h-[100px]"} ${'fixed w-full px-[30px] lg:px-[100px] z-30 flex items-center'}`}>
+  <header className={`${isHeaderChange ? "h-[100px]" : "h-[100px]"} ${'fixed w-full px-[30px] lg:px-[100px] z-30 flex items-center neo-a-tag-beige border-b-4 border-black'}`}>
     <div className='flex flex-col lg:flex-row items-center w-full justify-between'>
       {/* nav - initially hidden - show on desktop mode */}
       <Link to='home'
@@ -25,46 +25,26 @@ useEffect(() => {
       </Link> 
       <nav className='hidden lg:flex gap-x-12 font-semibold'>
         <Link to='home'
-              // activeClass='active'
-              smooth={true}
-              spy={true}
-              offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#5E24CA]"} ${'cursor-pointer text-[16px]  transition'}`}>
-          Teeeee
-        </Link>
-        <Link to='Everything'
-              // activeClass='active'
-              smooth={true}
-              spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-primary"} ${'cursor-pointer text-[16px]  transition'}`}>
-          Everything's
-        </Link>
-        <Link to='Gonna'
-              // activeClass='active'
-              smooth={true}
-              spy={true}
-              offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : " text-primary"} ${'cursor-pointer text-[16px]  transition'}`}>
-          Gonna
-        </Link>
-        <Link to='Be'
-              // activeClass='active'
-              smooth={true}
-              spy={true}
-              offset={-30}  className={`${isHeaderChange ? "text-[#ffffff]" : " text-primary"} ${'cursor-pointer text-[16px]  transition'}`}>
-          Be
-        </Link>
-        <Link to='Amazingggggg'
-              // activeClass='active'
-              smooth={true}
-              spy={true}
-              offset={5000}  className={`${isHeaderChange ? "text-[#ffffff]" : " text-primary"} ${'cursor-pointer text-[16px]  transition'}`}>
-          Amazingggggg
-        </Link>
-      </nav>
-      <Link to='home'
               activeClass=''
               smooth={true}
-              spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#62FFCD]"} ${'cursor-pointer text-[25px]  transition'}`}>
-        <a href='' target=''>Let's Work Together</a>
-      </Link> 
+              spy={true}
+              offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'neo-a-tag neo-a-tag-beige cursor-pointer text-[16px] font-extrabold transition'}`}>
+          Work
+        </Link>
+        <Link to='Everything'
+              activeClass='neo-a-tag neo-a-tag-beige'
+              smooth={true}
+              spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'neo-a-tag neo-a-tag-beige cursor-pointer text-[16px] font-extrabold  transition'}`}>
+          Services
+        </Link>
+        <Link to='Gonna'
+              activeClass='neo-a-tag neo-a-tag-beige'
+              smooth={true}
+              spy={true}
+              offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'neo-a-tag neo-a-tag-beige cursor-pointer text-[16px] font-extrabold transition'}`}>
+          Contact
+        </Link> 
+      </nav>
       {/* logo */}
       
       {/* <a href='#' className={`${isHeaderChange ? "" : "video-bg"} ${'max-w-[50px]'}`}>
