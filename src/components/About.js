@@ -28,7 +28,7 @@ const About = () => {
           whileInView={'show'} viewport={{once: false, amount: 0.3}}
           className='flex-1'>
             <h2 className='text-[55px] font-bold leading-[0.8] mb-4 lg:text-[40px]'>
-            About <span className='text-[#E7473C]'>Me</span>
+            About <span className='text-[#e07a5f]'>Me</span>
             </h2>
             <h3 className='h3 mb-4'>I'm a Freelancer</h3>
             <p className='mb-6'>
@@ -37,7 +37,7 @@ const About = () => {
             { /* stats */ }
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
-              <div className='text-[40px] font-tertiary mb-2 text-[#E7473C]'>
+              <div className='text-[40px] font-tertiary mb-2 text-[#e07a5f]'>
                 {inView ? <Countup start={0} end={13} duration={3} /> : 
                   null}
               </div>
@@ -47,7 +47,7 @@ const About = () => {
               </div>
             </div>
             <div>
-              <div className='text-[40px] font-tertiary mb-2 text-[#E7473C]'>
+              <div className='text-[40px] font-tertiary mb-2 text-[#e07a5f]'>
                 {inView ? <Countup start={0} end={15} duration={3} /> : 
                   null}
               </div>

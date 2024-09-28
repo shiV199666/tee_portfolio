@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MADE_Bruno";
+  src: url("../src/fonts/MADE_Bruno.otf");
+}
+
 .btn {
-  background: #E7473C;
+  background: #43c199;
   /* box-shadow: 0px 4.42184px 40.23px #F0F0F0; */
 }
 
@@ -12,7 +17,7 @@
   position: relative;
 
   .phoneSvg {
-    stroke: #E7473C;
+    stroke: #e07a5f;
     position: fixed;
     margin: auto;
   }
@@ -43,7 +48,7 @@ section {
 
     .progressBar {
       height: 10px;
-      background-color: #E7473C;
+      background-color: #e07a5f;
     }
   }
 
@@ -141,15 +146,15 @@ section {
 }
 
 .gradient,
-.active {
-  background: #E7473C;
-}
+/* .active {
+  background: #e07a5f;
+} */
 
-.active {
+/* .active {
   color: #F0F0F0;
   padding: 1rem;
   border-radius: 100%;
-}
+} */
 
 .services-list div {
   background: #262626;
@@ -169,14 +174,14 @@ section {
 }
 
 .services-list div:hover {
-  background: #E7473C;
+  background: #e07a5f;
   transform: translateY(-10px);
 }
 
 .formContainer {
 
   .phoneSvg {
-    stroke: #E7473C;
+    stroke: #e07a5f;
     position: absolute;
     margin: auto;
 
@@ -267,7 +272,7 @@ section {
   left: 0;
   width: calc(100% + 30px);
   height: calc(100% + 10px);
-  background-color: #E7473C;
+  background-color: #e07a5f;
   z-index: -1;
   box-shadow: var(--box-shadow);
   transition: border-radius .5s .3s;
@@ -354,7 +359,7 @@ section {
 
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-[#F0F0F0];
+    @apply font-secondary text-lg leading-8 text-[#F0F0F0] bg-[#EFEFEF];
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -379,5 +384,8 @@ section {
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  .sectionHome {
+    @apply py-8 lg:py-24 lg:h-screen flex;
   }
 }

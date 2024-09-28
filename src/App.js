@@ -11,10 +11,10 @@ import TestimonialNew from './components/TestimonialNew';
 
 const App = () => {
   return (
-    <div className='bg-[#1E1C1C] bg-no-repeat bg-cover'>
+    <div className='bg-no-repeat bg-cover'>
       <Header />
       <Banner />
-      <Nav />
+      {/* <Nav /> */}
       <About />
       <Services />
       <Work />

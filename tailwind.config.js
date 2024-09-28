@@ -2,6 +2,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
+      MADE_Bruno: 'MADE_Bruno, Helvetica, Arial, sans-serif',
       primary: 'Helvetica, Arial, sans-serif',
       secondary: 'Helvetica, Arial, sans-serif',
       tertiary: 'Aldrich',
@@ -20,11 +21,11 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0a0a0a',
-        accent: '#E7473C',
+        accent: '#e07a5f',
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
+        about: "url('./assets/tiara.png')",
         services: "url('./assets/services.png')",
       },
     },
