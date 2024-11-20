@@ -39,17 +39,17 @@ const textVariants = {
 const Banner = () => {
   return (
     <section className='sectionHome h-full' id='home' >
-      <div className='flex flex-col neo-a-tag-purple h-full'>
+      <div className='flex flex-col homepage-image h-full'>
         
         <div className='container mx-auto'>
         <div className='gap-y-8 lg:flex flex-col lg:gap-x-40 pt-[7%]'>
           <div className='relative'>
           {/* <motion.div className='absolute max-w-[50%] lg:max-w-[400px] mx-auto neo-image-box neo-a-tag-beige h-[400px] lg:ml-auto lg:mr-10'>
           </motion.div> */}
-            <div className='absolute inset-0 flex items-center justify-center mx-auto max-w-[50%] neo-a-tag-green lg:max-w-[600px] h-[650px] neo-image-box neo-a-tag-beige lg:ml-auto lg:mr-[-16.5rem]'>
+            <div className='absolute inset-0 flex items-center justify-center mx-auto max-w-[50%] neo-a-tag-green lg:max-w-[50%] h-[650px] neo-image-box neo-a-tag-beige lg:ml-auto lg:mr-[-16.5rem]'>
               {/* <span className='text-4xl font-bold text-white lg:ml-auto lg:mr-10'>Overlay Text</span> */}
             </div>
-            <img className='max-w-[50%] relative lg:max-w-[52%] mx-auto lg:ml-auto lg:mr-[-16.5rem]' src={Image} alt=''/>
+            <img className='max-w-[50%] relative lg:max-w-[50%] mx-auto lg:ml-auto lg:mr-[-16.5rem]' src={Image} alt=''/>
           </div>
           
           <motion.div className='absolute text-[230px] items-baseline flex leading-[0.8]'>

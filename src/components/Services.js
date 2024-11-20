@@ -32,18 +32,19 @@ const Services = () => {
     }
   ])
   return (
-    <section className='section' id='services'>
-      <div className='container mx-auto'>
+    <section className='section wave-background ' id='services'>
+      <div className='container mx-auto '>
         <div className='flex flex-col gap-y-3 lg:items-center'>
             <h2 className='text-[55px] font-bold leading-[0.8] mb-4 lg:text-[40px]'>
               My <span className='text-[#E7473C]'>Services</span>
             </h2>
             <span>I take a pride in saying that</span>
+            
           <div className='flex flex-wrap -m-4'>
             {
               cards.map((card, i) => (
-                <div key={i} className='services-list p-4 sm:w-1/2 lg:w-1/3'>
-                  <div className='h-full rounded-lg overflow-hidden'>
+                <div key={i} className='services-list-neo p-4 sm:w-1/2 lg:w-1/3'>
+                  <div className='h-full overflow-hidden neo-a-tag neo-a-tag-beige '>
                   {card.icon}
                     <h3 className='text-[30px] font-semibold mb-2'>{card.title}</h3>
                       <p>
