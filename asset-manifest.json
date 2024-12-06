@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/tee_portfolio/static/css/main.1dadf6f3.css",
-    "main.js": "/tee_portfolio/static/js/main.bdcdb92e.js",
+    "main.css": "/tee_portfolio/static/css/main.52a97d63.css",
+    "main.js": "/tee_portfolio/static/js/main.eb998190.js",
     "static/media/neo-photo.png": "/tee_portfolio/static/media/neo-photo.e25bd3385465293c0ca9.png",
     "static/media/writer.jpg": "/tee_portfolio/static/media/writer.61454d9827971e4228ed.jpg",
     "static/media/piano.jpg": "/tee_portfolio/static/media/piano.c32259436bd8e4a9c5ea.jpg",
+    "static/media/about_tee.png": "/tee_portfolio/static/media/about_tee.4926c72af326a340d680.png",
     "static/media/acting.jpg": "/tee_portfolio/static/media/acting.e67b10d58958d4c979d9.jpg",
     "static/media/MADE_Bruno.otf": "/tee_portfolio/static/media/MADE_Bruno.118b0ab947d65c06c890.otf",
     "static/media/singer.jpg": "/tee_portfolio/static/media/singer.5ab393e663059e08ff52.jpg",
+    "static/media/Coconat-BoldExt.otf": "/tee_portfolio/static/media/Coconat-BoldExt.9c7d3314a051e0776fd6.otf",
+    "static/media/Coconat-Regular.otf": "/tee_portfolio/static/media/Coconat-Regular.e632e4af0afd42bc96cd.otf",
+    "static/media/hero.svg": "/tee_portfolio/static/media/hero.0f0e24b412b2be234f54.svg",
+    "static/media/worksection1.svg": "/tee_portfolio/static/media/worksection1.7e135215b323e72f74e6.svg",
     "index.html": "/tee_portfolio/index.html",
     "static/media/logo.svg": "/tee_portfolio/static/media/logo.038ef972234511c95bb3f185c2562b5d.svg",
-    "main.1dadf6f3.css.map": "/tee_portfolio/static/css/main.1dadf6f3.css.map",
-    "main.bdcdb92e.js.map": "/tee_portfolio/static/js/main.bdcdb92e.js.map"
+    "main.52a97d63.css.map": "/tee_portfolio/static/css/main.52a97d63.css.map",
+    "main.eb998190.js.map": "/tee_portfolio/static/js/main.eb998190.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dadf6f3.css",
-    "static/js/main.bdcdb92e.js"
+    "static/css/main.52a97d63.css",
+    "static/js/main.eb998190.js"
   ]
 }
