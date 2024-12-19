@@ -1,25 +1,33 @@
 {
   "files": {
-    "main.css": "/tee_portfolio/static/css/main.44076ade.css",
-    "main.js": "/tee_portfolio/static/js/main.1ad58715.js",
+    "main.css": "/tee_portfolio/static/css/main.5e542d0d.css",
+    "main.js": "/tee_portfolio/static/js/main.6ab39311.js",
     "static/media/neo-photo.png": "/tee_portfolio/static/media/neo-photo.e25bd3385465293c0ca9.png",
     "static/media/writer.jpg": "/tee_portfolio/static/media/writer.61454d9827971e4228ed.jpg",
     "static/media/piano.jpg": "/tee_portfolio/static/media/piano.c32259436bd8e4a9c5ea.jpg",
     "static/media/about_tee.png": "/tee_portfolio/static/media/about_tee.4926c72af326a340d680.png",
     "static/media/acting.jpg": "/tee_portfolio/static/media/acting.e67b10d58958d4c979d9.jpg",
     "static/media/MADE_Bruno.otf": "/tee_portfolio/static/media/MADE_Bruno.118b0ab947d65c06c890.otf",
+    "static/media/LexendMega-Regular.ttf": "/tee_portfolio/static/media/LexendMega-Regular.3924907d0090eee3b023.ttf",
     "static/media/singer.jpg": "/tee_portfolio/static/media/singer.5ab393e663059e08ff52.jpg",
+    "static/media/Honey-Bear.ttf": "/tee_portfolio/static/media/Honey-Bear.e74d8b7bc506dfe9440e.ttf",
+    "static/media/piano.png": "/tee_portfolio/static/media/piano.4ea6992ddce2957cd3ca.png",
+    "static/media/singing.png": "/tee_portfolio/static/media/singing.e4ed0e302215a70af62c.png",
+    "static/media/Milkyway.ttf": "/tee_portfolio/static/media/Milkyway.5962103a9d99b4726d5f.ttf",
     "static/media/Coconat-BoldExt.otf": "/tee_portfolio/static/media/Coconat-BoldExt.9c7d3314a051e0776fd6.otf",
     "static/media/Coconat-Regular.otf": "/tee_portfolio/static/media/Coconat-Regular.e632e4af0afd42bc96cd.otf",
-    "static/media/hero.svg": "/tee_portfolio/static/media/hero.0f0e24b412b2be234f54.svg",
+    "static/media/acting.png": "/tee_portfolio/static/media/acting.481bdf63ba4599c277be.png",
+    "static/media/writer.png": "/tee_portfolio/static/media/writer.a79aaeab59eb0764d0b2.png",
+    "static/media/avatar.png": "/tee_portfolio/static/media/avatar.d145d770ed634e480735.png",
+    "static/media/piano-home.png": "/tee_portfolio/static/media/piano-home.1849585dc91e3c7263b2.png",
     "static/media/worksection1.svg": "/tee_portfolio/static/media/worksection1.7e135215b323e72f74e6.svg",
     "index.html": "/tee_portfolio/index.html",
     "static/media/logo.svg": "/tee_portfolio/static/media/logo.038ef972234511c95bb3f185c2562b5d.svg",
-    "main.44076ade.css.map": "/tee_portfolio/static/css/main.44076ade.css.map",
-    "main.1ad58715.js.map": "/tee_portfolio/static/js/main.1ad58715.js.map"
+    "main.5e542d0d.css.map": "/tee_portfolio/static/css/main.5e542d0d.css.map",
+    "main.6ab39311.js.map": "/tee_portfolio/static/js/main.6ab39311.js.map"
   },
   "entrypoints": [
-    "static/css/main.44076ade.css",
-    "static/js/main.1ad58715.js"
+    "static/css/main.5e542d0d.css",
+    "static/js/main.6ab39311.js"
   ]
 }
