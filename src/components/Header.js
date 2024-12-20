@@ -14,24 +14,36 @@ useEffect(() => {
     preloadedImage.current.src = Logo;
 }, []);
   return (
-  <header className={`${isHeaderChange ? "h-[85px]" : "h-[85px]"} ${'neo-header fixed w-full pl-[30px] lg:pl-[100px] z-30 flex items-center border-b-4 border-black'}`}>
+  <header className={`${isHeaderChange ? "h-[70px]" : "h-[70px]"} ${'neo-header fixed w-full pl-[30px] lg:pl-[100px] z-30 flex items-center border-b-4 border-white'}`}>
     <div className='flex justify-between items-center w-[100%] h-[100%]'>
       <div className='flex flex-col lg:flex-row items-center w-full justify-between'>
         {/* nav - initially hidden - show on desktop mode */}
         
         <nav className='hidden lg:flex gap-x-12 font-semibold'>
           <Link to='home'
-                activeClass=''
-                smooth={true}
-                spy={true}
-                offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'brutal-btn cursor-pointer text-[16px] font-extrabold transition'}`}>
-            Work
-          </Link>
-          <Link to='Everything'
                 activeClass='neo-a-tag neo-a-tag-beige'
                 smooth={true}
-                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'brutal-btn cursor-pointer text-[16px] font-extrabold  transition'}`}>
+                spy={true}
+                offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold transition'}`}>
+            Home
+          </Link>
+          <Link to='about'
+                activeClass='neo-a-tag neo-a-tag-beige'
+                smooth={true}
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold  transition'}`}>
+            About
+          </Link>
+          <Link to='services'
+                activeClass='neo-a-tag neo-a-tag-beige'
+                smooth={true}
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold  transition'}`}>
             Services
+          </Link>
+          <Link to='work'
+                activeClass='neo-a-tag neo-a-tag-beige'
+                smooth={true}
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold  transition'}`}>
+            Work
           </Link>
           {/* <Link to='Gonna'
                 activeClass='neo-a-tag neo-a-tag-beige'
@@ -53,7 +65,7 @@ useEffect(() => {
         </a> */}
       </div>
       <div className='lets-connect-header'>
-        <div className='lets-connect-header'>
+        <div className='text-white'>
           Lets Chat
         </div>
       </div>

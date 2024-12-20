@@ -150,7 +150,7 @@ const TestimonialNew = () => {
         <div className='mx-[3%] h-full w-full'>
           <div className='flex flex-col'>
           <div className='justify-start items-start'>
-              <h3 className='testimonial-title'>Feedback That Inspires</h3>
+              <h3 className='section-heading !text-[90px]'>Feedback That Inspires</h3>
               {/* <p>See what people are saying</p> */}
           </div>
           <div className='testimonies-section'>

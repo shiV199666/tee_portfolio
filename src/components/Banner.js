@@ -48,28 +48,46 @@ const Banner = () => {
         
           <div className='flex flex-row justify-centre'>
             <motion.div className='text-[12vw] items-baseline flex leading-[0.8] z-[1] flex-1'>
-              {/* <div className='flex flex-col'>
-                <div className='absolute items-baseline flex flex-col mt-[30rem] '>
-                  <div className='max-w-lg'>
-                    <p className='uppercase font-bold text-shadow-sm shadow-[#E2FB9B] text-[#CEF26B] font-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                  </div>
-                  <div className='max-w-lg'>
-                    <span className='neo-a-tag neo-a-tag-pink'>Contact</span>
-                  </div>
-              </div>
-              </div> */}
-              <div className='flex flex-col absolute ml-[-7%]'>
+              
+              <div className='flex flex-col  ml-[-7%]'>
                 <div className='flex flex-1'>
-                  <span className=' text-[17vw] name-text '>TIARA</span>
+                  <span className=' text-[12vw] name-text '>TIARA</span>
                 </div>
                 <div className='flex flex-1'>
-                  <span className=' text-[12vw] name-text title-text'>TURNER</span>
+                  <span className=' text-[11vw] name-text title-text'>TURNER</span>
                 </div>
               </div>
               
+              
             </motion.div>
+            
               <div className='z-0 flex-1'>
-              <div className='absolute z-20 flex justify-center items-end top-[3rem] left-[63rem]'>
+              
+                {/* <div className='flex items-center justify-end mx-auto max-w-[90%] neo-a-tag-green h-[80%] neo-image-box neo-a-tag-beige lg:ml-auto'>
+                  <img className='max-w-[100%] mx-auto lg:ml-auto' src={Image} alt=''/>
+                </div> */}
+                {/* <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc'>
+                  <p className='font-bold text-shadow text-black font-primary'>Sample description</p>
+                </motion.div>
+                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc2'>
+                  <p className='font-bold text-shadow text-black font-primary'>Sample description testing 2</p>
+                </motion.div>
+                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc3'>
+                <p className='font-bold text-shadow text-black font-primary'>Sample</p>
+                </motion.div> */}
+            </div>
+          </div>
+          <div className='flex flex-col'>
+                <div className='items-baseline flex flex-col'>
+                  <div className='max-w-lg'>
+                    <p className='text-[20px] font-bold text-black font-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  </div>
+                  <div className='max-w-lg'>
+                    <span className='btn btn-lg'>Contact</span>
+                  </div>
+                </div>
+              </div>
+          {/* <div className='absolute z-20 flex justify-center items-end top-[3rem] left-[63rem]'>
             
                 <h1 class="animate-pop-in justify-center flex items-center">
                 <div className='absolute z-30 h-[100%] justify-center items-center top-[32%] text-black text-[25px] font-Coconat font-extrabold'>
@@ -81,22 +99,7 @@ const Banner = () => {
                     
                   </svg>
                 </h1>
-              </div>
-                <div className='flex items-center justify-end mx-auto max-w-[90%] neo-a-tag-green h-[80%] neo-image-box neo-a-tag-beige lg:ml-auto'>
-                  <img className='max-w-[100%] mx-auto lg:ml-auto' src={Image} alt=''/>
-                </div>
-                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc'>
-                  <p className='font-bold text-shadow text-black font-primary'>Sample description</p>
-                </motion.div>
-                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc2'>
-                  <p className='font-bold text-shadow text-black font-primary'>Sample description testing 2</p>
-                </motion.div>
-                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc3'>
-                <p className='font-bold text-shadow text-black font-primary'>Sample</p>
-                </motion.div>
-            </div>
-          </div>
-          
+              </div> */}
           
          
           

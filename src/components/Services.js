@@ -59,10 +59,10 @@ const Services = () => {
     }
   ])
   return (
-    <section className='section h-full' id='services'>
+    <section className='section h-full background-service' id='services'>
       <div className='container-service mx-[5%]'>
         <div className='flex flex-col gap-y-3'>
-            <h2 className='service-text '>
+            <h2 className='section-heading'>
               <span className=''>Services</span>
             </h2>
             {/* <span>I take a pride in saying that</span> */}
@@ -76,24 +76,24 @@ const Services = () => {
                     {
                       i > 1 ? (
                       <div key={i} className=''>
-                         <div className={card.bgColor + ' services-container-box '+ card.class}>
+                         <div className={'bg-[#F1ECE8] services-container-box '+ card.class}>
                         {/* {card.icon} */}
-                        <h3 className={'text-white' + ' text-[100px] font-extrabold mb-2 tiara-about'}>{card.title}</h3>
+                        <h3 className={'text-black' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
                             <p className='text-[20px] font-bold'>
                               {card.text}
                             </p>
-                            <a className='no-underline colo' href='#'>learn more</a>
+                            <button className='btn btn-lg' href='#'>learn more</button>
                         </div>
                       </div>
                     ) : (
                       <div key={i} className={i === 0 ? 'service-box1' : 'service-box2'}>
-                        <div className={card.bgColor + ' services-container-box '+ card.class}>
+                        <div className={'bg-[#F1ECE8] services-container-box '+ card.class}>
                         {/* {card.icon} */}
-                          <h3 className={'text-white' + ' text-[100px] font-extrabold mb-2 tiara-about'}>{card.title}</h3>
+                          <h3 className={'text-black' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
                             <p className='font-bold text-[20px]'>
                               {card.text}
                             </p>
-                            <a className='no-underline btn' href='#'>learn more</a>
+                            <button className='btn btn-lg' href='#'>learn more</button>
                         </div>
                       </div>
                     )

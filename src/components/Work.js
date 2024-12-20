@@ -30,10 +30,10 @@ const Single = ({ item, index }) => {
         <div className='wrapper'>
           {/* <div className='border-2 border-white/50 imageContainer' ref={ref}> */}
           <div className=' imageContainer' ref={ref}>
-            <img className='group-hover:scale-125 transition-all duration-500' src={item.img} alt='' />
+            {/* <img className='group-hover:scale-125 transition-all duration-500' src={item.img} alt='' /> */}
           </div>
           <motion.div className='textContainer' style={{y}}>
-            <h2 className='text-[150px] text-center font-extrabold mb-[4rem] tiara-about'>{item.title}</h2>
+            <h2 className='text-[80px] text-center font-extrabold mb-[4rem] tiara-about'>{item.title}</h2>
             <p className='text-white'>{item.desc}</p>
             <button className='btn btn-'>See more</button>
           </motion.div>
@@ -101,7 +101,7 @@ const Work = () => {
 
             <div className='portfolio' ref={ref}>
               <div className='progress'>
-                <h2 className='work-title'>
+                <h2 className='section-heading'>
                   <span>My Works</span>
                 </h2>
                 {/* <div className='progressBar'></div> */}

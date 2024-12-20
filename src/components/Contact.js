@@ -59,10 +59,10 @@ const Contact = () => {
               {/* <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>
                 Get in touch
               </h4> */}
-              <h2 className='text-[45px] lg:text-[150px] font-extrabold flex flex-col leading-none justify-center mb-12 text-accent'>
+              <h2 className='text-[45px] lg:text-[120px] font-extrabold flex flex-col leading-none justify-center mb-12'>
                 <span className='tiara-about'>Let's work</span>
                
-                <span className='justify-center flex'> together!</span>
+                <span className='justify-center flex text-[#A290E6]'> together!</span>
               </h2>
               <div className='item text-black flex flex-col items-center '>
                 <h2 className='font-bold'>Drop me an email:</h2>
@@ -85,14 +85,14 @@ const Contact = () => {
             onSubmit={sendEmail}
             >
               <div className='flex gap-x-3'>
-                <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-black focus:border-accent transition-all'
+                <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
                   type='text'
                   name='name'
                   placeholder='Your name'
                   // onChange={handleNameChange}
                   >
                 </input>
-                <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-black focus:border-accent transition-all'
+                <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
                   type='text'
                   name='email'
                   placeholder='Your email'
@@ -102,7 +102,7 @@ const Contact = () => {
               </div>
               
               <textarea className='bg-transparent border-b py-3 outline-none w-full
-              placeholder:text-black focus:border-accent transition-all
+              placeholder:text-white focus:border-accent transition-all
                 resize-none'
                 name='message'
                 placeholder='Your message'
@@ -119,17 +119,17 @@ const Contact = () => {
           
           
         </motion.div>
-        <div className='flex gap-x-6 justify-center items-center absolute pt-[4rem]'>
+        
+      </motion.div>
+      <div className='flex gap-x-6 justify-center items-center'>
             <div>
               <button className='btn btn-lg'>Instagram</button>
             </div>
             <div>
               <button className='btn btn-lg'>LinkedIn</button>
             </div>
-      </div>
-      </motion.div>
-      
-      <div className='flex text-[16vw] font-bold text-black justify-center items-center opacity-5 z-[-1]'>
+          </div>
+      <div className='flex text-[16vw] font-bold text-white justify-center items-center opacity-5 z-[-1]'>
           THANK YOU
       </div>
       
