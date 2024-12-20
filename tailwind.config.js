@@ -6,8 +6,13 @@ module.exports = {
     fontFamily: {
       MADE_Bruno: 'MADE_Bruno, Helvetica, Arial, sans-serif',
       primary: 'Helvetica, Arial, sans-serif',
+      Coconat: 'Coconat',
+      CoconatBold: 'Coconat-bold',
       secondary: 'Helvetica, Arial, sans-serif',
       tertiary: 'Aldrich',
+      honey: 'Honey',
+      Milkyway: 'Milkyway',
+      LexendMega: 'LexendMega'
     },
     container: {
       padding: {
@@ -32,7 +37,7 @@ module.exports = {
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',
-        DEFAULT: '0 4px 8px var(--tw-shadow-color)',
+        DEFAULT: '0 23px 10px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
     },
@@ -48,5 +53,15 @@ module.exports = {
         { values: theme('textShadow') }
       )
     }),
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-stroke-black': {
+          '-webkit-text-stroke': '5px black',
+        },
+        '.text-stroke-red': {
+          '-webkit-text-stroke': '2px red',
+        },
+      });
+    }
   ],
 };

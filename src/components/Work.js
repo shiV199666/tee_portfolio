@@ -7,13 +7,14 @@ import Piano from '../assets/work/piano.jpg';
 import Acting from '../assets/work/acting.jpg';
 import Writer from '../assets/work/writer.jpg';
 import Singer from '../assets/work/singer.jpg';
+// import Work from '../assets/work.png';
 
 // motion
 import { motion } from 'framer-motion';
 
 import { useScroll, useSpring, useTransform } from 'framer-motion';
 
-const Single = ({ item }) => {
+const Single = ({ item, index }) => {
 
   const ref = useRef();
 
@@ -24,15 +25,16 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [300, -300]);
   return (
-    <section className='worksection'>
+    <section className={'worksection workpart0 '+index}>
       <div className='container flex overflow-hidden justify-center h-[100%] items-center mx-auto'>
         <div className='wrapper'>
-          <div className='border-2 border-white/50 imageContainer' ref={ref}>
+          {/* <div className='border-2 border-white/50 imageContainer' ref={ref}> */}
+          <div className=' imageContainer' ref={ref}>
             <img className='group-hover:scale-125 transition-all duration-500' src={item.img} alt='' />
           </div>
           <motion.div className='textContainer' style={{y}}>
-            <h2 className='text-[60px] font-semibold mb-2'>{item.title}</h2>
-            <p>{item.desc}</p>
+            <h2 className='text-[150px] text-center font-extrabold mb-[4rem] tiara-about'>{item.title}</h2>
+            <p className='text-white'>{item.desc}</p>
             <button className='btn btn-'>See more</button>
           </motion.div>
         </div>
@@ -99,8 +101,8 @@ const Work = () => {
 
             <div className='portfolio' ref={ref}>
               <div className='progress'>
-                <h2 className='text-[55px] font-bold leading-[0.8] mb-2 lg:text-[40px]'>
-                  My <span className='text-[#E7473C]'>Works</span>
+                <h2 className='work-title'>
+                  <span>My Works</span>
                 </h2>
                 {/* <div className='progressBar'></div> */}
                 {/* <motion.div style={{ scaleX }} className="progressBar"></motion.div> */}
@@ -108,7 +110,7 @@ const Work = () => {
               
               {items.map( (item, i) => (
                 // <p>item.title</p>
-                <Single item={item} key={i} />
+                <Single item={item} key={i} index={i} />
               ))}
               
             </div>

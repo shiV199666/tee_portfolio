@@ -1,6 +1,7 @@
 import React from 'react';
 // images
 import Image from '../assets/neo-photo.png';
+import piano from '../assets/piano-home.png';
 // import Scroll from '../assets/scroll.png';
 // icons
 // import { FaDribbble, FaTwitter  , FaInstagram , FaYoutube } from 'react-icons/fa';
@@ -38,32 +39,67 @@ const textVariants = {
 };
 const Banner = () => {
   return (
-    <section className='sectionHome h-full' id='home' >
-      <div className='flex flex-col homepage-image h-full'>
+    <section className='sectionHome homepage-image h-full' id='home' >
+      <div className='flex flex-col h-full mx-[8%] '>
         
-        <div className='container mx-auto'>
-        <div className='gap-y-8 lg:flex flex-col lg:gap-x-40 pt-[7%]'>
-          <div className='relative'>
-          {/* <motion.div className='absolute max-w-[50%] lg:max-w-[400px] mx-auto neo-image-box neo-a-tag-beige h-[400px] lg:ml-auto lg:mr-10'>
-          </motion.div> */}
-            <div className='absolute inset-0 flex items-center justify-center mx-auto max-w-[50%] neo-a-tag-green lg:max-w-[50%] h-[650px] neo-image-box neo-a-tag-beige lg:ml-auto lg:mr-[-16.5rem]'>
-              {/* <span className='text-4xl font-bold text-white lg:ml-auto lg:mr-10'>Overlay Text</span> */}
+        <div className='relative mx-[3%]'>
+        <div className='gap-y-20 lg:flex flex-col lg:gap-x-40 pt-[10rem]'>
+          
+        
+          <div className='flex flex-row justify-centre'>
+            <motion.div className='text-[12vw] items-baseline flex leading-[0.8] z-[1] flex-1'>
+              {/* <div className='flex flex-col'>
+                <div className='absolute items-baseline flex flex-col mt-[30rem] '>
+                  <div className='max-w-lg'>
+                    <p className='uppercase font-bold text-shadow-sm shadow-[#E2FB9B] text-[#CEF26B] font-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  </div>
+                  <div className='max-w-lg'>
+                    <span className='neo-a-tag neo-a-tag-pink'>Contact</span>
+                  </div>
+              </div>
+              </div> */}
+              <div className='flex flex-col absolute ml-[-7%]'>
+                <div className='flex flex-1'>
+                  <span className=' text-[17vw] name-text '>TIARA</span>
+                </div>
+                <div className='flex flex-1'>
+                  <span className=' text-[12vw] name-text title-text'>TURNER</span>
+                </div>
+              </div>
+              
+            </motion.div>
+              <div className='z-0 flex-1'>
+              <div className='absolute z-20 flex justify-center items-end top-[3rem] left-[63rem]'>
+            
+                <h1 class="animate-pop-in justify-center flex items-center">
+                <div className='absolute z-30 h-[100%] justify-center items-center top-[32%] text-black text-[25px] font-Coconat font-extrabold'>
+                  Hi! How are you?
+                </div>
+                  <svg width="450" height="150" viewBox="0 0 574 335" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" transform="scale(-1, 1)">
+                    <path d="m410.748 286.523 35.166 45.332 35.167-45.332h89.79V45.814H62.494v240.709h348.254Z" fill="#000" stroke="#000" stroke-width="4.326" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="m395.521 266.663 35.167 45.332 35.167-45.332h89.789l.001-240.708H44.107v240.708h351.414Z" fill="#FFEA80" stroke="#000" stroke-width="4.326" stroke-linecap="round" stroke-linejoin="round"></path>
+                    
+                  </svg>
+                </h1>
+              </div>
+                <div className='flex items-center justify-end mx-auto max-w-[90%] neo-a-tag-green h-[80%] neo-image-box neo-a-tag-beige lg:ml-auto'>
+                  <img className='max-w-[100%] mx-auto lg:ml-auto' src={Image} alt=''/>
+                </div>
+                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc'>
+                  <p className='font-bold text-shadow text-black font-primary'>Sample description</p>
+                </motion.div>
+                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc2'>
+                  <p className='font-bold text-shadow text-black font-primary'>Sample description testing 2</p>
+                </motion.div>
+                <motion.div className='absolute items-baseline pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc3'>
+                <p className='font-bold text-shadow text-black font-primary'>Sample</p>
+                </motion.div>
             </div>
-            <img className='max-w-[50%] relative lg:max-w-[50%] mx-auto lg:ml-auto lg:mr-[-16.5rem]' src={Image} alt=''/>
           </div>
           
-          <motion.div className='absolute text-[230px] items-baseline flex leading-[0.8]'>
-            <span className='uppercase font-bold text-shadow shadow-black text-[#F1ECE8] font-primary '>Tiara TURNER</span>
-          </motion.div>
-          <motion.div className='absolute items-baseline mt-[26rem] pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc'>
-            <p className='font-bold text-shadow text-black font-primary'>Sample description</p>
-          </motion.div>
-          <motion.div className='absolute items-baseline mt-[30rem] pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc2'>
-            <p className='font-bold text-shadow text-black font-primary'>Sample description testing 2</p>
-          </motion.div>
-          <motion.div className='absolute items-baseline mt-[35rem] pl-[30px] max-w-lg mx-auto lg:text-[20px] lg:mx-0 desc3'>
-          <p className='font-bold text-shadow text-black font-primary'>Sample</p>
-          </motion.div>
+          
+         
+          
           {/* <motion.div className='absolute text-[150px] items-baseline flex leading-[2.5] pl-[8%]'>
             <span className='uppercase font-bold text-shadow shadow-black text-[#eeeeee] specialtext'>Turner</span>
           </motion.div> */}
@@ -74,7 +110,7 @@ const Banner = () => {
         
       </div>
       {/* <motion.div className='slidingTextContainer absolute z-[-1]' variants={sliderVariants} initial="initial" animate="animate">
-              Writer Musician Actor
+              Writer Pianist Actor Singer
         </motion.div> */}
       {/* <div>
         <motion.h1 variants={fadeIn('up', 0.3)} initial="hidden"
@@ -89,6 +125,9 @@ const Banner = () => {
         Writer Musician Actor
         </div>
       </footer> */}
+      {/* <div className='absolute top-0 piano-home'>
+        <img src={piano} ></img>
+      </div> */}
       
     </section>
   );

@@ -48,69 +48,91 @@ const Contact = () => {
   };
 
   return (
-    <section className='py-16 lg:section' id='contact' ref={ref}>
+    <section className='py-16 lg:section flex flex-col items-center justify-end' id='contact' ref={ref}>
       <motion.div className='container mx-auto' variants={variants} initial='initial' whileInView="animate">
-        <motion.div className='flex flex-col lg:flex-row' variants={variants}>
+        <motion.div className='flex flex-col lg:flex-col justify-center items-center' variants={variants}>
           { /* text */ }
-          <motion.div variants={fadeIn('right', 0.3)} initial="hidden"
+          <div variants={fadeIn('right', 0.3)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.3}}
-          className='flex-1 flex justify-start items-center'>
-            <div>
-              <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>
+          className='flex-1 flex justify-center items-center'>
+            <div className=''>
+              {/* <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>
                 Get in touch
-              </h4>
-              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
-                Let's work <br/> together!
+              </h4> */}
+              <h2 className='text-[45px] lg:text-[150px] font-extrabold flex flex-col leading-none justify-center mb-12 text-accent'>
+                <span className='tiara-about'>Let's work</span>
+               
+                <span className='justify-center flex'> together!</span>
               </h2>
-              <div className='item'>
-                <h2>Email</h2>
-                <span>tee@gmail.com</span>
+              <div className='item text-black flex flex-col items-center '>
+                <h2 className='font-bold'>Drop me an email:</h2>
+                <span className='text-[30px] font-bold'>tee@gmail.com</span>
               </div>
-              <div className='item'>
+              {/* <div className='item'>
                 <h2>Address</h2>
                 <span>Koramangala</span>
               </div>
               <div className='item'>
                 <h2>Phone</h2>
                 <span>8965235555</span>
-              </div>
+              </div> */}
             </div>
-          </motion.div>
+          </div>
           
-        <motion.form ref={formRef} className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6'
+        <motion.form ref={formRef} className='flex-1 rounded-2xl flex flex-col gap-y-6 p-6'
             variants={fadeIn('left', 0.3)} initial="hidden"
             whileInView={'show'} viewport={{once: false, amount: 0.3}}
             onSubmit={sendEmail}
             >
-              <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                name='name'
-                placeholder='Your name'
-                // onChange={handleNameChange}
-                >
-              </input>
-              <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                name='email'
-                placeholder='Your email'
-                // onChange={handleEmailChange}
-                >
+              <div className='flex gap-x-3'>
+                <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-black focus:border-accent transition-all'
+                  type='text'
+                  name='name'
+                  placeholder='Your name'
+                  // onChange={handleNameChange}
+                  >
                 </input>
+                <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-black focus:border-accent transition-all'
+                  type='text'
+                  name='email'
+                  placeholder='Your email'
+                  // onChange={handleEmailChange}
+                  >
+                  </input>
+              </div>
+              
               <textarea className='bg-transparent border-b py-3 outline-none w-full
-              placeholder:text-white focus:border-accent transition-all
-                resize-none mb-12'
+              placeholder:text-black focus:border-accent transition-all
+                resize-none'
                 name='message'
                 placeholder='Your message'
                 // onChange={handleMessageChange}
                 >
               </textarea>
-              <button className='btn btn-lg'>Send message</button>
+              
               {error && "Error"}
               {success && "Success"}
           </motion.form>
+          <div>
+            <button className='btn btn-lg'>Send message</button>
+          </div>
+          
+          
         </motion.div>
-        
+        <div className='flex gap-x-6 justify-center items-center absolute pt-[4rem]'>
+            <div>
+              <button className='btn btn-lg'>Instagram</button>
+            </div>
+            <div>
+              <button className='btn btn-lg'>LinkedIn</button>
+            </div>
+      </div>
       </motion.div>
+      
+      <div className='flex text-[16vw] font-bold text-black justify-center items-center opacity-5 z-[-1]'>
+          THANK YOU
+      </div>
+      
     </section>
   );
 };

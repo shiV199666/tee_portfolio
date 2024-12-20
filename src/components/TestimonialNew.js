@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // intersection observer hook
 import { useInView } from 'react-intersection-observer';
-import Writer from '../assets/work/writer.jpg';
+import Writer from '../assets/avatar.png';
 
 // import Swiper JS
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -35,11 +35,11 @@ const TestimonialNew = () => {
         }
     ]);
   return (
-    <section className='section' id='testimonial' ref={ref}>
+    <section className='section testimonialsection' id='testimonial' ref={ref}>
         <div className='container mx-auto'>
             <div className='testi'>
                 <div className='head'>
-                    <h3 className='text-[55px] font-bold leading-[0.8] mb-2 lg:text-[40px]'>Testimonials.</h3>
+                    <h3 className='testimonial-title'>Feedback That Inspires</h3>
                     <p>See what people are saying</p>
                 </div>
                 <Swiper

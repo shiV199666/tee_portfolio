@@ -1,104 +1,184 @@
-import React from 'react';
-// import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-
-// import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import React, { useState } from 'react';
 
 // intersection observer hook
 import { useInView } from 'react-intersection-observer';
+import Writer from '../assets/avatar.png';
 
-// icons
-import { BsArrowRight } from 'react-icons/bs';
-// next image
-import { Image } from 'next/image';
+// import Swiper JS
+import {Swiper, SwiperSlide} from "swiper/react";
+import { Navigation, Pagination } from 'swiper';
 
-// testimonial data
-const testimonialData = [
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+const TestimonialNew = () => {
+    const [ref, inView] = useInView({
+        threshold: 0.5,
+      })
+    // testimonial data
+    const [testimonialData] = useState([
+        {
+            image: Writer,
+            name: 'Anne Smith',
+            gridArea: 'item1',
+            color: 'bg-[#A290E6]',
+            position: 'Customer',
+            message:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        },
+        {
+            image: Writer,
+            gridArea: 'item2',
+            name: 'Anne Smith',
+            color: 'bg-[#A290E6]',
+            position: 'Customer',
+            message:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        },
+        {
+          image: Writer,
+          name: 'Anne Smith',
+          gridArea: 'Area',
+          color: 'bg-[#A290E6]',
+          position: 'Customer',
+          message:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      },
+      {
+          image: Writer,
+          gridArea: 'Area-2',
+          name: 'Anne Smith',
+          color: 'bg-[#A290E6]',
+          position: 'Customer',
+          message:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      },
+      {
+        image: Writer,
+        name: 'Anne Smith',
+        gridArea: 'Area',
+        color: 'bg-[#A290E6]',
+        position: 'Customer',
+        message:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+    },
     {
-      image: '/t-avt-1.png',
+        image: Writer,
+        gridArea: 'Area-2',
+        name: 'Anne Smith',
+        color: 'bg-[#A290E6]',
+        position: 'Customer',
+        message:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      },
+      {
+        image: Writer,
+        name: 'Anne Smith',
+        gridArea: 'Area',
+        color: 'bg-[#A290E6]',
+        position: 'Customer',
+        message:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      },
+      {
+          image: Writer,
+          gridArea: 'Area-2',
+          name: 'Anne Smith',
+          color: 'bg-[#A290E6]',
+          position: 'Customer',
+          message:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      },{
+        image: Writer,
+        name: 'Anne Smith',
+        gridArea: 'Area',
+        color: 'bg-[#A290E6]',
+        position: 'Customer',
+        message:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+    },
+    {
+        image: Writer,
+        gridArea: 'Area-2',
+        name: 'Anne Smith',
+        color: 'bg-[#A290E6]',
+        position: 'Customer',
+        message:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+    },{
+      image: Writer,
       name: 'Anne Smith',
+      gridArea: 'Area',
+      color: 'bg-[#A290E6]',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
     },
     {
-      image: '/t-avt-2.png',
-      name: 'Jane Doe',
+      image: Writer,
+      gridArea: 'Area-2',
+      name: 'Anne Smith',
+      color: 'bg-[#A290E6]',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
     },
     {
-      image: '/t-avt-3.png',
-      name: 'Jhon Doe',
+      image: Writer,
+      gridArea: 'Area-2',
+      name: 'Anne Smith',
+      color: 'bg-[#A290E6]',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
     },
-];
-
-const Testimonial = () => {
-    // const [ref, inView] = useInView({
-    //     threshold: 0.5,
-    //   })
+    {
+      image: Writer,
+      gridArea: 'Area-2',
+      name: 'Anne Smith',
+      color: 'bg-[#A290E6]',
+      position: 'Customer',
+      message:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+    }
+        
+    ]);
   return (
-    <section className='section' id='testimonial' >
-    return (
-    <>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-      </Swiper>
-    </>
-  );
+    <section className='section testimonialsection h-full' id='testimonial' ref={ref}>
+        <div className='mx-[3%] h-full w-full'>
+          <div className='flex flex-col'>
+          <div className='justify-start items-start'>
+              <h3 className='testimonial-title'>Feedback That Inspires</h3>
+              {/* <p>See what people are saying</p> */}
+          </div>
+          <div className='testimonies-section'>
+          {
+                                testimonialData.map((testimonial, i) => (
+                                   <div key={i} className={testimonial.color+' testimonies-card item'+(i+1)}>
+                                    <div className='w-[100px]'>
+                                                <img src={testimonial.image} className='w-[100%]' alt=''/>
+                                    </div>
+                                    <div className=''>
+                                        <p>{testimonial.message}</p>
+                                        <div className=''>
+                                            {/* <h4>{testimonial.name}</h4> */}
+                                            <p>{testimonial.position}</p>
+                                        </div>
+                                    </div>
+                                   </div>
+
+                                ))
+            }
+          </div>
+          </div>
+         
+            
+        </div>
     </section>
+    
   );
 };
 
-export default Testimonial;
+export default TestimonialNew;

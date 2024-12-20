@@ -14,43 +14,51 @@ useEffect(() => {
     preloadedImage.current.src = Logo;
 }, []);
   return (
-  <header className={`${isHeaderChange ? "h-[100px]" : "h-[100px]"} ${'fixed w-full px-[30px] lg:px-[100px] z-30 flex items-center neo-a-tag-beige border-b-4 border-black'}`}>
-    <div className='flex flex-col lg:flex-row items-center w-full justify-between'>
-      {/* nav - initially hidden - show on desktop mode */}
-      <Link to='home'
-              activeClass=''
-              smooth={true}
-              spy={true} className={`${'max-w-[170px] cursor-pointer'}`}>
-        <img src={Logo} alt='Tiara Turner logo'/>
-      </Link> 
-      <nav className='hidden lg:flex gap-x-12 font-semibold'>
+  <header className={`${isHeaderChange ? "h-[85px]" : "h-[85px]"} ${'neo-header fixed w-full pl-[30px] lg:pl-[100px] z-30 flex items-center border-b-4 border-black'}`}>
+    <div className='flex justify-between items-center w-[100%] h-[100%]'>
+      <div className='flex flex-col lg:flex-row items-center w-full justify-between'>
+        {/* nav - initially hidden - show on desktop mode */}
+        
+        <nav className='hidden lg:flex gap-x-12 font-semibold'>
+          <Link to='home'
+                activeClass=''
+                smooth={true}
+                spy={true}
+                offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'brutal-btn cursor-pointer text-[16px] font-extrabold transition'}`}>
+            Work
+          </Link>
+          <Link to='Everything'
+                activeClass='neo-a-tag neo-a-tag-beige'
+                smooth={true}
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'brutal-btn cursor-pointer text-[16px] font-extrabold  transition'}`}>
+            Services
+          </Link>
+          {/* <Link to='Gonna'
+                activeClass='neo-a-tag neo-a-tag-beige'
+                smooth={true}
+                spy={true}
+                offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'brutal-btn cursor-pointer text-[16px] font-extrabold transition'}`}>
+            Contact
+          </Link>  */}
+        </nav>
+        {/* logo */}
         <Link to='home'
-              activeClass=''
-              smooth={true}
-              spy={true}
-              offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'neo-a-tag neo-a-tag-beige cursor-pointer text-[16px] font-extrabold transition'}`}>
-          Work
-        </Link>
-        <Link to='Everything'
-              activeClass='neo-a-tag neo-a-tag-beige'
-              smooth={true}
-              spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'neo-a-tag neo-a-tag-beige cursor-pointer text-[16px] font-extrabold  transition'}`}>
-          Services
-        </Link>
-        <Link to='Gonna'
-              activeClass='neo-a-tag neo-a-tag-beige'
-              smooth={true}
-              spy={true}
-              offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'neo-a-tag neo-a-tag-beige cursor-pointer text-[16px] font-extrabold transition'}`}>
-          Contact
+                activeClass=''
+                smooth={true}
+                spy={true} className={`${'max-w-[170px] cursor-pointer'}`}>
+          <img src={Logo} alt='Tiara Turner logo'/>
         </Link> 
-      </nav>
-      {/* logo */}
-      
-      {/* <a href='#' className={`${isHeaderChange ? "" : "video-bg"} ${'max-w-[50px]'}`}>
-        <img src={blackLogo} alt='gautammonangifilms logo' loading='lazy'/>
-      </a> */}
+        {/* <a href='#' className={`${isHeaderChange ? "" : "video-bg"} ${'max-w-[50px]'}`}>
+          <img src={blackLogo} alt='gautammonangifilms logo' loading='lazy'/>
+        </a> */}
+      </div>
+      <div className='lets-connect-header'>
+        <div className='lets-connect-header'>
+          Lets Chat
+        </div>
+      </div>
     </div>
+    
      {/* <MobileNav isHeaderChange={isHeaderChange}/> */}
   </header>
   );
