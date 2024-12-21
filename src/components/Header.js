@@ -21,28 +21,28 @@ useEffect(() => {
         
         <nav className='hidden lg:flex gap-x-12 font-semibold'>
           <Link to='home'
-                activeClass='neo-a-tag neo-a-tag-beige'
+                // activeClass='neo-a-tag neo-a-tag-beige'
                 smooth={true}
                 spy={true}
-                offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold transition'}`}>
+                offset={-30} className={`${isHeaderChange ? "text-[#ffffff]" : "text-[#ffffff]"} ${'cursor-pointer text-[20px] font-bold transition'}`}>
             Home
           </Link>
           <Link to='about'
-                activeClass='neo-a-tag neo-a-tag-beige'
+                // activeClass='neo-a-tag neo-a-tag-beige'
                 smooth={true}
-                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold  transition'}`}>
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[20px] font-bold  transition'}`}>
             About
           </Link>
           <Link to='services'
-                activeClass='neo-a-tag neo-a-tag-beige'
+                // activeClass='neo-a-tag neo-a-tag-beige'
                 smooth={true}
-                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold  transition'}`}>
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[20px] font-bold  transition'}`}>
             Services
           </Link>
           <Link to='work'
-                activeClass='neo-a-tag neo-a-tag-beige'
+                // activeClass='neo-a-tag neo-a-tag-beige'
                 smooth={true}
-                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[23px] font-bold  transition'}`}>
+                spy={true} className={`${isHeaderChange ? "text-[#ffffff]" : " text-[#ffffff]"} ${'cursor-pointer text-[20px] font-bold  transition'}`}>
             Work
           </Link>
           {/* <Link to='Gonna'
@@ -65,7 +65,7 @@ useEffect(() => {
         </a> */}
       </div>
       <div className='lets-connect-header'>
-        <div className='text-white'>
+        <div className='text-white text-[23px]'>
           Lets Chat
         </div>
       </div>

@@ -49,8 +49,8 @@ const Contact = () => {
 
   return (
     <section className='py-16 lg:section flex flex-col items-center justify-end' id='contact' ref={ref}>
-      <motion.div className='container mx-auto' variants={variants} initial='initial' whileInView="animate">
-        <motion.div className='flex flex-col lg:flex-col justify-center items-center' variants={variants}>
+      <div className='container mx-auto' variants={variants} initial='initial' whileInView="animate">
+        <div className='flex flex-col lg:flex-col justify-center items-center' variants={variants}>
           { /* text */ }
           <div variants={fadeIn('right', 0.3)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.3}}
@@ -59,12 +59,12 @@ const Contact = () => {
               {/* <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>
                 Get in touch
               </h4> */}
-              <h2 className='text-[45px] lg:text-[120px] font-extrabold flex flex-col leading-none justify-center mb-12'>
+              <h2 className='text-[45px] lg:text-[100px] font-extrabold flex flex-col leading-none justify-center mb-12'>
                 <span className='tiara-about'>Let's work</span>
                
                 <span className='justify-center flex text-[#A290E6]'> together!</span>
               </h2>
-              <div className='item text-black flex flex-col items-center '>
+              <div className='item text-[#F1ECE8] flex flex-col items-center '>
                 <h2 className='font-bold'>Drop me an email:</h2>
                 <span className='text-[30px] font-bold'>tee@gmail.com</span>
               </div>
@@ -79,7 +79,7 @@ const Contact = () => {
             </div>
           </div>
           
-        <motion.form ref={formRef} className='flex-1 rounded-2xl flex flex-col gap-y-6 p-6'
+        <form ref={formRef} className='flex-1 rounded-2xl flex flex-col gap-y-6 p-6'
             variants={fadeIn('left', 0.3)} initial="hidden"
             whileInView={'show'} viewport={{once: false, amount: 0.3}}
             onSubmit={sendEmail}
@@ -112,23 +112,23 @@ const Contact = () => {
               
               {error && "Error"}
               {success && "Success"}
-          </motion.form>
+          </form>
           <div>
             <button className='btn btn-lg'>Send message</button>
           </div>
           
           
-        </motion.div>
+        </div>
         
-      </motion.div>
-      <div className='flex gap-x-6 justify-center items-center'>
+      </div>
+      {/* <div className='flex gap-x-6 justify-center items-center'>
             <div>
-              <button className='btn btn-lg'>Instagram</button>
+              <button className='btn btn-lg '>Instagram</button>
             </div>
             <div>
               <button className='btn btn-lg'>LinkedIn</button>
             </div>
-          </div>
+      </div> */}
       <div className='flex text-[16vw] font-bold text-white justify-center items-center opacity-5 z-[-1]'>
           THANK YOU
       </div>

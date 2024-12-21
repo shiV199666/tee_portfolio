@@ -75,25 +75,28 @@ const Services = () => {
                   <>
                     {
                       i > 1 ? (
-                      <div key={i} className=''>
-                         <div className={'bg-[#F1ECE8] services-container-box '+ card.class}>
+                         <div key={i} className={'bg-black relative services-container-box '+ card.class}>
                         {/* {card.icon} */}
-                        <h3 className={'text-black' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
-                            <p className='text-[20px] font-bold'>
-                              {card.text}
+                        <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
+                        <div className='text-outline'>
+                            <p className='font-bold text-[18px]  '>
+                                {card.text}
                             </p>
-                            <button className='btn btn-lg' href='#'>learn more</button>
+                          </div>
+                            <button className='btn px-[12px]' href='#'>Show more</button>
                         </div>
-                      </div>
                     ) : (
                       <div key={i} className={i === 0 ? 'service-box1' : 'service-box2'}>
-                        <div className={'bg-[#F1ECE8] services-container-box '+ card.class}>
+                        <div className={'bg-black relative services-container-box '+ card.class}>
                         {/* {card.icon} */}
-                          <h3 className={'text-black' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
-                            <p className='font-bold text-[20px]'>
-                              {card.text}
-                            </p>
-                            <button className='btn btn-lg' href='#'>learn more</button>
+                          <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
+                          <div className='text-outline'>
+                            <p className='font-bold text-[18px]  '>
+                                {card.text}
+                              </p>
+                          </div>
+                           
+                            <button className='btn px-[12px]' href='#'>Show more</button>
                         </div>
                       </div>
                     )

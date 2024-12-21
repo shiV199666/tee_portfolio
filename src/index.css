@@ -72,6 +72,23 @@
   grid-template-columns: 1fr .75fr 1fr
 }
 
+.text-outline {
+  /* color: var(--color-yellow); */
+  /* -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.15rem; */
+  /* position: absolute; */
+  width: 100%;
+  right: 0;
+  left: -20px;
+  border: .1rem solid var(--color-beige);
+  /* border-width: 5px; */
+  color: black;
+  background-color: var(--color-purple);
+  padding: 10px;
+  border-radius: .75rem;
+  box-shadow: 6px 6px var(--color-beige);
+}
+
 .services-container-box {
   padding: 3%;
   display: flex;
@@ -80,12 +97,12 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #000;
   position: relative;
-  border: .1rem solid var(--color-black);
+  border: .1rem solid var(--color-beige);
   border-radius: .75rem;
-  box-shadow: 3px 3px 0 0 var(--color-black);
+  box-shadow: 6px 6px var(--color-beige);
   /* background-image: url(https://cdn.prod.website-files.com/6456008800a8412bde8a5bf6/66fbbc096f0ace83366d425f_white-texture.png); */
   background-position: 0 0;
   background-size: auto;
@@ -194,6 +211,12 @@
   -webkit-text-stroke-color: #4324bd;
   -webkit-text-stroke-width: 0.15rem;
   text-shadow: 4px 4px var(--color-black);
+}
+
+.text-shadow-green {
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.15rem;
+  text-shadow: 4px 4px var(--color-green);
 }
 
 .w-layout-grid {
@@ -308,12 +331,12 @@
   justify-content: space-around;
   padding: 35px;
   display: flex;
-  box-shadow: -7px 7px 0 -2px var(--color-black)
+  box-shadow: -7px 7px 0 -2px var(--color-beige)
 }
 
 .testimonies-section {
   grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-row-gap: 85px;
   /* background-color: #fff; */
   grid-template: "Area Area-2 Area-3""Area.Area-3"1px"Area-5 Area-5 Area-6""Area-15 Area-7 Area-7""Area-8 Area-8 Area-9""Area-10 Area-11 Area-11"max-content"Area-12 Area-12 Area-12""Area-13 Area-13 Area-14"/350fr 340px 510fr;
   grid-auto-columns: 1fr;
@@ -324,7 +347,7 @@
 .section-heading {
   /* text-[55px] font-extrabold leading-[0.8] mb-6 lg:text-[100px] */
   /* letter-spacing: 1.5rem; */
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 800;
   margin-bottom: 6rem;
   color: var(--color-purple);
@@ -667,7 +690,7 @@ section {
 
         p {
           color: rgb(255, 255, 255);
-          font-size: 20px;
+          font-size: 18px;
           line-height: 2rem;
           font-weight: bold;
 

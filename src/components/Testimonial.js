@@ -150,14 +150,14 @@ const TestimonialNew = () => {
         <div className='mx-[3%] h-full w-full'>
           <div className='flex flex-col'>
           <div className='justify-start items-start'>
-              <h3 className='section-heading !text-[90px]'>Feedback That Inspires</h3>
+              <h3 className='section-heading '>Feedback That Inspires</h3>
               {/* <p>See what people are saying</p> */}
           </div>
           <div className='testimonies-section'>
           {
                                 testimonialData.map((testimonial, i) => (
-                                   <div key={i} className={testimonial.color+' testimonies-card item'+(i+1)}>
-                                    <div className='w-[100px]'>
+                                   <div key={i} className={testimonial.color+' relative testimonies-card item'+(i+1)}>
+                                    <div className='absolute top-[-40px] w-[100px]'>
                                                 <img src={testimonial.image} className='w-[100%]' alt=''/>
                                     </div>
                                     <div className=''>

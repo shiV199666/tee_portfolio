@@ -49,12 +49,12 @@ const Banner = () => {
           <div className='flex flex-row justify-centre'>
             <motion.div className='text-[12vw] items-baseline flex leading-[0.8] z-[1] flex-1'>
               
-              <div className='flex flex-col  ml-[-7%]'>
+              <div className='flex flex-col  ml-[-7%] leading-[0.85]'>
                 <div className='flex flex-1'>
-                  <span className=' text-[12vw] name-text '>TIARA</span>
+                  <span className=' text-[10vw] name-text '>TIARA</span>
                 </div>
                 <div className='flex flex-1'>
-                  <span className=' text-[11vw] name-text title-text'>TURNER</span>
+                  <span className=' text-[8vw] name-text title-text'>TURNER</span>
                 </div>
               </div>
               
@@ -78,13 +78,19 @@ const Banner = () => {
             </div>
           </div>
           <div className='flex flex-col'>
-                <div className='items-baseline flex flex-col'>
+                <div className='items-baseline flex flex-col  gap-y-4'>
                   <div className='max-w-lg'>
                     <p className='text-[20px] font-bold text-black font-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   </div>
-                  <div className='max-w-lg'>
-                    <span className='btn btn-lg'>Contact</span>
+                  <div className='flex justify-center items-center text-[25px] font-bold gap-x-4'>
+                    <button className='max-w-lg btn btn-lg'>
+                      Contact
+                    </button>
+                    <div className=''>
+                      See Work
+                    </div>
                   </div>
+                  
                 </div>
               </div>
           {/* <div className='absolute z-20 flex justify-center items-end top-[3rem] left-[63rem]'>

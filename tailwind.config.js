@@ -29,6 +29,11 @@ module.exports = {
       colors: {
         primary: '#0a0a0a',
         accent: '#e07a5f',
+        organge: '#FEB89A',
+        purple: '#A290E6',
+        green: '#CEF26B',
+        yellow: '#FCDD57',
+        beige: '#F1ECE8'
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",

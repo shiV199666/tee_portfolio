@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section className='section h-full' id='about' ref={ref}>
       
-      <div className='mx-[5%] rounded-2xl neo-a-tag-orange w-full'>
+      <div className='relative mx-[5%] rounded-2xl neo-a-tag-orange w-full'>
       <div className="top-[-3] h-[100%] w-[100%] flex justify-center items-center ml-[17%]">
         <div className='about-title'>
           <div className='w-[100%] h-[100%] text-[160px]'>
@@ -27,7 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div class="absolute top-[81%] flex w-full left-[-13%] justify-end items-center">
+      <div class="absolute top-[-2%] flex w-full left-[-13%] justify-end items-center">
         <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.5135 9.17047L32.5 3.13043L34.4865 9.17047C37.8081 19.2703 45.7297 27.1919 55.8295 30.5135L61.8696 32.5L55.8295 34.4865C45.7297 37.8081 37.8081 45.7297 34.4865 55.8295L32.5 61.8696L30.5135 55.8295C27.1919 45.7297 19.2703 37.8081 9.17047 34.4865L3.13043 32.5L9.17047 30.5135C19.2703 27.1919 27.1919 19.2703 30.5135 9.17047Z" fill="#FFE66D" stroke="#050F0F" stroke-width=".2rem"></path>
         </svg>
@@ -55,7 +55,7 @@ const About = () => {
           variants={fadeIn('left', 0.5)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.3}}
           className='flex-1 py-[5%]'>
-            <h2 className='text-[13px] font-extrabold leading-[1]  mb-9 lg:text-[52px] text-black'>
+            <h2 className='text-[12px] font-extrabold leading-[1]  mb-9 lg:text-[42px] text-black'>
               Hi, <br/> I'm Tiara!
             </h2>
             {/* <h3 className='h3 mb-4'>I'm a Freelancer</h3> */}
