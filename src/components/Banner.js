@@ -4,7 +4,7 @@ import Image from '../assets/neo-photo.png';
 import piano from '../assets/piano-home.png';
 // import Scroll from '../assets/scroll.png';
 // icons
-// import { FaDribbble, FaTwitter  , FaInstagram , FaYoutube } from 'react-icons/fa';
+
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -80,15 +80,16 @@ const Banner = () => {
           <div className='flex flex-col'>
                 <div className='items-baseline flex flex-col  gap-y-4'>
                   <div className='max-w-lg'>
-                    <p className='text-[20px] font-bold text-black font-primary'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p className='text-[20px] font-normal text-black'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                   </div>
-                  <div className='flex justify-center items-center text-[25px] font-bold gap-x-4'>
+                  <div className='flex justify-center items-center text-[25px] font-normal gap-x-4'>
                     <button className='max-w-lg btn btn-lg'>
-                      Contact
-                    </button>
-                    <div className=''>
                       See Work
-                    </div>
+                    </button>
+                    <a>
+                      Contact Me
+                    </a>
+                    <img src="https://cdn.prod.website-files.com/638daee1c52f5465fc5159eb/638e0e841af23899cf38c3c6_Vector%2032.svg"/>
                   </div>
                   
                 </div>

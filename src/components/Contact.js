@@ -65,8 +65,8 @@ const Contact = () => {
                 <span className='justify-center flex text-[#A290E6]'> together!</span>
               </h2>
               <div className='item text-[#F1ECE8] flex flex-col items-center '>
-                <h2 className='font-bold'>Drop me an email:</h2>
-                <span className='text-[30px] font-bold'>tee@gmail.com</span>
+                <h2>Drop me an email:</h2>
+                <span className='text-[30px] font-normal'>tee@gmail.com</span>
               </div>
               {/* <div className='item'>
                 <h2>Address</h2>

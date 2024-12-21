@@ -11,8 +11,7 @@ module.exports = {
       secondary: 'Helvetica, Arial, sans-serif',
       tertiary: 'Aldrich',
       honey: 'Honey',
-      Milkyway: 'Milkyway',
-      LexendMega: 'LexendMega'
+      ClashDisplay: 'ClashDisplay'
     },
     container: {
       padding: {

@@ -18,18 +18,8 @@
 }
 
 @font-face {
-  font-family: "Milkyway";
-  src: url("../src/fonts/Milkyway.ttf");
-}
-
-@font-face {
-  font-family: "Coconat-bold";
-  src: url("../src/fonts/Coconat-BoldExt.otf");
-}
-
-@font-face {
-  font-family: "LexendMega";
-  src: url("../src/fonts/LexendMega-Regular.ttf");
+  font-family: "ClashDisplay";
+  src: url("../src/fonts/ClashDisplay-Variable.ttf");
 }
 
 /* .specialtext
@@ -69,7 +59,7 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-rows: auto;
-  grid-template-columns: 1fr .75fr 1fr
+  grid-template-columns: 1fr 1fr 1fr
 }
 
 .text-outline {
@@ -85,7 +75,7 @@
   color: black;
   background-color: var(--color-purple);
   padding: 10px;
-  border-radius: .75rem;
+  /* border-radius: .75rem; */
   box-shadow: 6px 6px var(--color-beige);
 }
 
@@ -583,9 +573,8 @@
 }
 .btn {
   /* font-size: 15px; */
-  font-weight: bold;
+  font-weight: normal;
   background: var(--color-green);
-  /* padding: 8px; */
   border-color: #000;
   border-width: 1px;
   color: #000;
@@ -692,7 +681,6 @@ section {
           color: rgb(255, 255, 255);
           font-size: 18px;
           line-height: 2rem;
-          font-weight: bold;
 
           @media (max-width: 738px) {
             font-size: 16px;
@@ -954,13 +942,16 @@ section {
     @apply font-primary text-lg leading-8 text-[#F0F0F0] bg-black bg-[0_0] ;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-ClashDisplay text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  p, a, h2, h3 {
+    @apply font-ClashDisplay tracking-wider font-normal
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-ClashDisplay font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-[#F0F0F0] font-medium;
+    @apply rounded-full font-ClashDisplay text-[#F0F0F0] font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;

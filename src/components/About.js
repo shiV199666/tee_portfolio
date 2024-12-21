@@ -2,6 +2,7 @@ import React from 'react';
 // countup
 import Countup from 'react-countup';
 import Image from '../assets/about_tee.png';
+import { FaDribbble, FaTwitter  , FaInstagram , FaYoutube } from 'react-icons/fa';
 // intersection observer hook
 import { useInView } from 'react-intersection-observer';
 // motion
@@ -41,21 +42,13 @@ const About = () => {
           <h1 className='text-[80px] font-bold leading-[1]'>ABOUT ME</h1>
         </div> */}
         <div className='flex flex-col lg:flex-row lg:items-center lg:gap-y-0 items-center gap-y-0'>
-        { /* text */ }
-          <motion.div 
-          variants={fadeIn('left', 0.5)} initial="hidden"
-          whileInView={'show'} viewport={{once: false, amount: 0.3}}
-          className='flex-1'>
-            <div className=''>
-              {/* <img className='max-w-[150%] mx-auto lg:ml-auto' src={Image} alt=''/> */}
-            </div>
-          </motion.div>
+          
           { /* text */ }
-          <motion.div 
+          <div 
           variants={fadeIn('left', 0.5)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.3}}
-          className='flex-1 py-[5%]'>
-            <h2 className='text-[12px] font-extrabold leading-[1]  mb-9 lg:text-[42px] text-black'>
+          className='flex-1 flex flex-col p-[5%] justify-center items-start gap-3'>
+            <h2 className='text-[12px] leading-[1] font-normal mb-9 lg:text-[52px] text-black'>
               Hi, <br/> I'm Tiara!
             </h2>
             {/* <h3 className='h3 mb-4'>I'm a Freelancer</h3> */}
@@ -67,21 +60,39 @@ const About = () => {
                 <div className='text-about-me'>Fourth <span className='text-[#DCF88C]'>line</span></div>
               </div>
             </div> */}
-            <div className='pr-[30%] text-[18px] font-extrabold leading-[1.3] text-black'>
+            <div className='pr-[30%] text-[18px] leading-[1.3] text-black'>
               <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
               when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
               </p>
             </div>
            
+            <div className='flex justify-center items-center text-[25px] font-bold gap-x-4'>
+                    <button className='max-w-lg btn btn-lg'>
+                      See Work
+                    </button>
+                    <div className='flex text-black gap-4'>
+                      <div>
+                        <FaInstagram/>
+                      </div>
+                      <div>
+                        <FaTwitter/>
+                      </div>
+                    </div>
+            </div>
+          </div>
+          <motion.div 
+          variants={fadeIn('left', 0.5)} initial="hidden"
+          whileInView={'show'} viewport={{once: false, amount: 0.3}}
+          className='flex-1'>
             <div className=''>
-              {/* <button className='about-button'>Lets Connect</button> */}
+              {/* <img className='max-w-[150%] mx-auto lg:ml-auto' src={Image} alt=''/> */}
             </div>
           </motion.div>
           { /* stats */ }
           {/* <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
-              <div className='text-[40px] font-tertiary mb-2 text-[#e07a5f]'>
+              <div className='text-[40px] font-tertiary mb-2 text-purple'>
                 {inView ? <Countup start={0} end={13} duration={3} /> : 
                   null}
               </div>

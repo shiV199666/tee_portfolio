@@ -31,9 +31,11 @@ const Services = () => {
       bgColor: 'bg-[#FFB5D0]',
       class: 'service-writer',
       titleColor: 'text-[#FF80AA]',
-      text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+      text: `My method of teaching is a little unconventional but effective, nonetheless.
+      The best analogy I can use is giving students the puzzle pieces without interfering in their process of putting it together.
+      There is guidance, but no hand-holding because in my 16 years of learning,
+      I've found that the information and technique that has never left my system and been the easiest to turn into muscle memory is that which I've figured out myself using the tools my teachers have equipped me with,
+      rather than the machinery they have built for me.`
     },
     {
       // icon: <FaTheaterMasks className='text-[100px]  mb-8 mt-6'/>,
@@ -67,48 +69,48 @@ const Services = () => {
             </h2>
             {/* <span>I take a pride in saying that</span> */}
             
-          <div className='flex flex-wrap m-4'>
-          <div className='service-block w-layout-grid' > 
-            <div className='w-layout-grid services-row'>
-              {
-                cards.map((card, i) => (
-                  <>
-                    {
-                      i > 1 ? (
-                         <div key={i} className={'bg-black relative services-container-box '+ card.class}>
-                        {/* {card.icon} */}
-                        <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
-                        <div className='text-outline'>
-                            <p className='font-bold text-[18px]  '>
-                                {card.text}
-                            </p>
+            <div className='flex flex-wrap m-4'>
+              <div className='service-block w-layout-grid' > 
+                <div className='w-layout-grid services-row'>
+                  {
+                    cards.map((card, i) => (
+                      <>
+                        {
+                          i > 1 ? (
+                            <div key={i} className={'bg-black relative services-container-box '+ card.class}>
+                            {/* {card.icon} */}
+                            <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
+                            <div className='text-outline'>
+                                <p className='font-normal text-[18px]  '>
+                                    {card.text}
+                                </p>
+                              </div>
+                                <button className='btn px-[12px]' href='#'>Show more</button>
+                            </div>
+                        ) : (
+                          <div key={i} className={i === 0 ? 'service-box1' : 'service-box2'}>
+                            <div className={'bg-black relative services-container-box '+ card.class}>
+                            {/* {card.icon} */}
+                              <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
+                              <div className='text-outline'>
+                                <p className='font-normal text-[18px]  '>
+                                    {card.text}
+                                  </p>
+                              </div>
+                              
+                                <button className='btn px-[12px]' href='#'>Show more</button>
+                            </div>
                           </div>
-                            <button className='btn px-[12px]' href='#'>Show more</button>
-                        </div>
-                    ) : (
-                      <div key={i} className={i === 0 ? 'service-box1' : 'service-box2'}>
-                        <div className={'bg-black relative services-container-box '+ card.class}>
-                        {/* {card.icon} */}
-                          <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
-                          <div className='text-outline'>
-                            <p className='font-bold text-[18px]  '>
-                                {card.text}
-                              </p>
-                          </div>
-                           
-                            <button className='btn px-[12px]' href='#'>Show more</button>
-                        </div>
-                      </div>
-                    )
-                    }
-                  </>
-                  
-                
-                ))
-              }
-            </div>
+                        )
+                        }
+                      </>
+                      
+                    
+                    ))
+                  }
+                </div>
+              </div>
           </div>
-        </div>
         </div>
       </div>     
     </section>
