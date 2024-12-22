@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tee_portfolio/static/css/main.541b076a.css",
-    "main.js": "/tee_portfolio/static/js/main.d7166bbe.js",
+    "main.css": "/tee_portfolio/static/css/main.972fa13d.css",
+    "main.js": "/tee_portfolio/static/js/main.df7e0c8b.js",
     "static/media/neo-photo.png": "/tee_portfolio/static/media/neo-photo.e25bd3385465293c0ca9.png",
     "static/media/about_tee.png": "/tee_portfolio/static/media/about_tee.4926c72af326a340d680.png",
     "static/media/MADE_Bruno.otf": "/tee_portfolio/static/media/MADE_Bruno.118b0ab947d65c06c890.otf",
@@ -17,11 +17,11 @@
     "static/media/lightning.png": "/tee_portfolio/static/media/lightning.e0d82994abf6a5176ed8.png",
     "index.html": "/tee_portfolio/index.html",
     "static/media/logo.svg": "/tee_portfolio/static/media/logo.038ef972234511c95bb3f185c2562b5d.svg",
-    "main.541b076a.css.map": "/tee_portfolio/static/css/main.541b076a.css.map",
-    "main.d7166bbe.js.map": "/tee_portfolio/static/js/main.d7166bbe.js.map"
+    "main.972fa13d.css.map": "/tee_portfolio/static/css/main.972fa13d.css.map",
+    "main.df7e0c8b.js.map": "/tee_portfolio/static/js/main.df7e0c8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.541b076a.css",
-    "static/js/main.d7166bbe.js"
+    "static/css/main.972fa13d.css",
+    "static/js/main.df7e0c8b.js"
   ]
 }
