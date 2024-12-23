@@ -2,6 +2,7 @@ import React from 'react';
 // images
 import Image from '../assets/neo-photo.png';
 import piano from '../assets/piano-home.png';
+// import { Magnetic } from '@/components/core/magnetic';
 // import Scroll from '../assets/scroll.png';
 // icons
 

@@ -1,15 +1,11 @@
 {
   "files": {
-    "main.css": "/tee_portfolio/static/css/main.aebd18e4.css",
-    "main.js": "/tee_portfolio/static/js/main.fe96ceb6.js",
+    "main.css": "/tee_portfolio/static/css/main.972fa13d.css",
+    "main.js": "/tee_portfolio/static/js/main.df7e0c8b.js",
     "static/media/neo-photo.png": "/tee_portfolio/static/media/neo-photo.e25bd3385465293c0ca9.png",
-    "static/media/writer.jpg": "/tee_portfolio/static/media/writer.61454d9827971e4228ed.jpg",
-    "static/media/piano.jpg": "/tee_portfolio/static/media/piano.c32259436bd8e4a9c5ea.jpg",
     "static/media/about_tee.png": "/tee_portfolio/static/media/about_tee.4926c72af326a340d680.png",
-    "static/media/acting.jpg": "/tee_portfolio/static/media/acting.e67b10d58958d4c979d9.jpg",
     "static/media/MADE_Bruno.otf": "/tee_portfolio/static/media/MADE_Bruno.118b0ab947d65c06c890.otf",
     "static/media/ClashDisplay-Variable.ttf": "/tee_portfolio/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
-    "static/media/singer.jpg": "/tee_portfolio/static/media/singer.5ab393e663059e08ff52.jpg",
     "static/media/Honey-Bear.ttf": "/tee_portfolio/static/media/Honey-Bear.e74d8b7bc506dfe9440e.ttf",
     "static/media/piano.png": "/tee_portfolio/static/media/piano.4ea6992ddce2957cd3ca.png",
     "static/media/singing.png": "/tee_portfolio/static/media/singing.e4ed0e302215a70af62c.png",
@@ -18,14 +14,14 @@
     "static/media/writer.png": "/tee_portfolio/static/media/writer.a79aaeab59eb0764d0b2.png",
     "static/media/avatar.png": "/tee_portfolio/static/media/avatar.d145d770ed634e480735.png",
     "static/media/piano-home.png": "/tee_portfolio/static/media/piano-home.1849585dc91e3c7263b2.png",
-    "static/media/worksection1.svg": "/tee_portfolio/static/media/worksection1.ebe7446e844d797dda69.svg",
+    "static/media/lightning.png": "/tee_portfolio/static/media/lightning.e0d82994abf6a5176ed8.png",
     "index.html": "/tee_portfolio/index.html",
     "static/media/logo.svg": "/tee_portfolio/static/media/logo.038ef972234511c95bb3f185c2562b5d.svg",
-    "main.aebd18e4.css.map": "/tee_portfolio/static/css/main.aebd18e4.css.map",
-    "main.fe96ceb6.js.map": "/tee_portfolio/static/js/main.fe96ceb6.js.map"
+    "main.972fa13d.css.map": "/tee_portfolio/static/css/main.972fa13d.css.map",
+    "main.df7e0c8b.js.map": "/tee_portfolio/static/js/main.df7e0c8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.aebd18e4.css",
-    "static/js/main.fe96ceb6.js"
+    "static/css/main.972fa13d.css",
+    "static/js/main.df7e0c8b.js"
   ]
 }

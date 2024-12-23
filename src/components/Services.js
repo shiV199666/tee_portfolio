@@ -77,7 +77,7 @@ const Services = () => {
                       <>
                         {
                           i > 1 ? (
-                            <div key={i} className={'bg-black relative services-container-box '+ card.class}>
+                            <div key={i} className={'bg-black relative services-container-box  '+ card.class}>
                             {/* {card.icon} */}
                             <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
                             <div className='text-outline'>
@@ -85,11 +85,11 @@ const Services = () => {
                                     {card.text}
                                 </p>
                               </div>
-                                <button className='btn px-[12px]' href='#'>Show more</button>
+                                <a className='btn text-[15px] px-[12px]' href='#'>Show more</a>
                             </div>
                         ) : (
                           <div key={i} className={i === 0 ? 'service-box1' : 'service-box2'}>
-                            <div className={'bg-black relative services-container-box '+ card.class}>
+                            <div className={'bg-black relative services-container-box service '+ card.class}>
                             {/* {card.icon} */}
                               <h3 className={'text-beige' + ' text-[50px] font-extrabold mb-2 '}>{card.title}</h3>
                               <div className='text-outline'>
@@ -98,7 +98,7 @@ const Services = () => {
                                   </p>
                               </div>
                               
-                                <button className='btn px-[12px]' href='#'>Show more</button>
+                                <a className='btn text-[15px] px-[12px]' href='#'>Show more</a>
                             </div>
                           </div>
                         )

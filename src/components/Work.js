@@ -2,11 +2,16 @@ import React, { useRef, useState } from 'react';
 
 // intersection observer hook
 import { useInView } from 'react-intersection-observer';
+import { InstagramEmbed } from 'react-social-media-embed';
 
-import Piano from '../assets/work/piano.jpg';
-import Acting from '../assets/work/acting.jpg';
-import Writer from '../assets/work/writer.jpg';
-import Singer from '../assets/work/singer.jpg';
+// import Piano from '../assets/work/piano.jpg';
+// import Acting from '../assets/work/acting.jpg';
+// import Writer from '../assets/work/writer.jpg';
+// import Singer from '../assets/work/singer.jpg';
+import Piano from '../assets/piano.png'
+import Writer from '../assets/writer.png'
+import Acting from '../assets/acting.png'
+import Singer from '../assets/singing.png'
 // import Work from '../assets/work.png';
 
 // motion
@@ -25,16 +30,37 @@ const Single = ({ item, index }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [300, -300]);
   return (
-    <section className={'worksection workpart0 '+index}>
-      <div className='container flex overflow-hidden justify-center h-[100%] items-center mx-auto'>
-        <div className='wrapper'>
-          {/* <div className='border-2 border-white/50 imageContainer' ref={ref}> */}
-          <div className=' imageContainer' ref={ref}>
+    <section className={'worksection workpart'+index}>
+      {
+        index === 0 ? (
+        <div className='h-[100%] absolute'>
+          <div className='masonry-layout ' ref={ref}>
+            <InstagramEmbed className='mb-4 w-[100px] flex' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328} />
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            {/* <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/>
+            <InstagramEmbed className='mb-4' url='https://www.instagram.com/reel/CyGYJ0bhN2Y/?igsh=c2poaXZqYzUxazAx' width={328}/> */}
             {/* <img className='group-hover:scale-125 transition-all duration-500' src={item.img} alt='' /> */}
           </div>
+        </div>
+        ) : (<></>)
+      }
+      <div className='container flex flex-row overflow-hidden justify-center h-[100%] items-center mx-auto'>
+        
+        <div className='wrapper'>
+          {/* <div className='border-2 border-white/50 imageContainer' ref={ref}> */}
+          {/* <div className=' imageContainer' ref={ref}> */}
+            {/* <img className='group-hover:scale-125 transition-all duration-500' src={item.img} alt='' /> */}
+          {/* </div> */}
           <motion.div className='textContainer' style={{y}}>
-            <h2 className='text-[65px] text-center font-extrabold mb-[4rem] tiara-about'>{item.title}</h2>
-            <p className='text-white'>{item.desc}</p>
+            {/* <h2 className='text-[65px] text-center font-extrabold mb-[4rem] tiara-about'>{item.title}</h2> */}
+            <img className='group-hover:scale-125 transition-all duration-500' src={item.img} alt='' />
+            <p className=''>{item.desc}</p>
             <button className='w-[200px] btn btn-'>See more</button>
           </motion.div>
         </div>
@@ -48,10 +74,20 @@ const Work = () => {
   const [items] = useState([
     {
       id: 1,
-      title: 'Pianist',
-      img: Piano,
-      desc: `Fire can glow,dazzle and even burn`
+      title: 'Singer',
+      img: Singer,
+      desc: `Stair singer...................................
+      Ek Duje De Kol (Paas)
+      Kaliyan Raatan Chann Te Taare
+      Pehla Si Jo Waade
+      Hunn Ne Sab Mainu Lagde Laare
+
+      Ajj Hi Gam Naal Pala
+      Wagde Naino Hanju Khare
+      Fass Gaye Ishq De Gede Wich
+      Kaaton Na Hunn Labhan Sahare`
     },
+    
     {
       id: 2,
       title: 'Acting',
@@ -70,19 +106,11 @@ const Work = () => {
     },
     {
       id: 4,
-      title: 'Singer',
-      img: Singer,
-      desc: `Stair singer...................................
-      Ek Duje De Kol (Paas)
-      Kaliyan Raatan Chann Te Taare
-      Pehla Si Jo Waade
-      Hunn Ne Sab Mainu Lagde Laare
-
-      Ajj Hi Gam Naal Pala
-      Wagde Naino Hanju Khare
-      Fass Gaye Ishq De Gede Wich
-      Kaaton Na Hunn Labhan Sahare`
+      title: 'Pianist',
+      img: Piano,
+      desc: `Fire can glow,dazzle and even burn`
     }
+    
   ]);
 
   const ref = useRef();
@@ -96,7 +124,8 @@ const Work = () => {
   })
 
   return (
-    <section id='work'>
+    <section id='work '>
+      
       {/* <div className='container mx-auto'> */}
 
             <div className='portfolio' ref={ref}>

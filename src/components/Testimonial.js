@@ -149,8 +149,12 @@ const TestimonialNew = () => {
     <section className='section testimonialsection h-full' id='testimonial' ref={ref}>
         <div className='mx-[3%] h-full w-full'>
           <div className='flex flex-col'>
-          <div className='justify-start items-start'>
-              <h3 className='section-heading '>Feedback That Inspires</h3>
+          <div className='justify-center items-center flex'>
+              <h3 className='section-heading '>Feedback That <br/>
+                <span className='text-beige'>
+                  Inspires
+                </span>
+              </h3>
               {/* <p>See what people are saying</p> */}
           </div>
           <div className='testimonies-section'>

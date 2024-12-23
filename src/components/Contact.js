@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 // motion
 import { motion, useInView } from 'framer-motion';
+import Star from '../assets/shapes/lightning.png';
+import { FaDribbble, FaTwitter  , FaInstagram , FaYoutube } from 'react-icons/fa';
 // variants
 import { fadeIn } from '../variants';
 import emailjs from "@emailjs/browser";
@@ -50,7 +52,10 @@ const Contact = () => {
   return (
     <section className='py-16 lg:section flex flex-col items-center justify-end' id='contact' ref={ref}>
       <div className='container mx-auto' variants={variants} initial='initial' whileInView="animate">
-        <div className='flex flex-col lg:flex-col justify-center items-center' variants={variants}>
+      <div className='absolute right-[10rem] w-[3%] rotate-12 '>
+        <img src={Star} />
+      </div>
+        <div className='flex flex-col lg:flex-col justify-centre items-center gap-3' variants={variants}>
           { /* text */ }
           <div variants={fadeIn('right', 0.3)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.3}}
@@ -115,6 +120,14 @@ const Contact = () => {
           </form>
           <div>
             <button className='btn btn-lg'>Send message</button>
+          </div>
+          <div className='flex text-white gap-4 text-[2rem]'>
+            <div>
+              <FaInstagram/>
+            </div>
+            <div>
+              <FaTwitter/>
+            </div>
           </div>
           
           
